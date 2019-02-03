@@ -6,7 +6,7 @@
 </head>
 <body>
     <ul>
-        {% for appointment in appointments %}
+        {% for appointment in object_list %}
             <li>{{appointment}}</li>
             {% empty %}
             <li>No appointment yet</li>
