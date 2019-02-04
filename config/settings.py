@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.forms',
     'django_apscheduler'
+
 ]
 
 MIDDLEWARE = [
