@@ -1,1 +1,5 @@
-django==2.1.5
+Django==2.1.5
+django-apscheduler==0.2.13
+django-bootstrap4==0.0.7
+django-material==1.4.3
+twilio==6.23.1

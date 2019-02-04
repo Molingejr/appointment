@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Appointments</title>
-</head>
-<body>
+{% extends 'index.html' %}
+{% load material_form %}
+{% block title %}
+    Appointment list
+{% endblock %}
+
+{% block content %}
+    <h2>List of Scheduled Appointments</h2>
     <ul>
         {% for appointment in object_list %}
-            <li>{{appointment}}</li>
+            <li class="card">
+                <div class="card-title">{{appointment.title}}</div>
+                <div class="card-content card-panel">
+                    {{ appointment.content }} <br/>
+                    Reminder Tel: {{ appointment.tel }} <br/>
+                    Time: {{ appointment.date }} <br/>
+                </div>
+            </li>
             {% empty %}
             <li>No appointment yet</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
