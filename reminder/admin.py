@@ -1,5 +1,5 @@
 from django.contrib import admin
 from reminder.models import Appointment
 
-# We Register our models here.
+# Register our models
 admin.site.register(Appointment)

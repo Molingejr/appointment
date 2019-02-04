@@ -24,6 +24,16 @@ def create_appointment(request):
     """
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
+
+        # request.POST is immutable, so we turn it to mutable so we can
+        # edit the time date format from the form to a date time format to
+        # match our model
+        mutable = request.POST._mutable
+        request.POST._mutable = True
+        raw_date = request.POST['date'].split(' ')  # split our time and date values
+        request.POST['date'] = ' '.join(raw_date[::-1])  # Reverse the date
+        request.POST._mutable = mutable
+
         # create a form instance and populate it with data from the request:
         form = AppointmentForm(request.POST)
 
