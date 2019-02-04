@@ -7,7 +7,7 @@
 {% block content %}
     <h2>List of Scheduled Appointments</h2>
     <ul>
-        {% for appointment in object_list %}
+        {% for appointment in object_list reversed %}
             <li class="card">
                 <div class="card-title">{{appointment.title}}</div>
                 <div class="card-content card-panel">

@@ -4,11 +4,24 @@
 {% endblock %}
 
 {% block head %}
+    {# Load the tag library #}
+    {% load bootstrap4 %}
+
+    {# Load CSS and JavaScript #}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+
+    {# Display django.contrib.messages as Bootstrap alerts #}
+    {% bootstrap_messages %}
 {% endblock %}
 {% block content %}
     <div>
-        <h1>Welcome</h1>
-        <button>Create Appointment</button>
-         <button>View Appointment</button>
+        <br/><br/><br/>
+        <div class="jumbotron"><br/><br/><h1>Appointment Reminder</h1><br/><br/></div>
+        <div>
+            <a href="{% url 'reminder:create_appointment' %}"><button class="btn-large">Schedule Appointment</button></a>
+            <a href="{% url 'reminder:AppointmentList' %}"><button class="btn-large">View Appointments</button></a>
+        </div>
+
     </div>
 {% endblock %}
