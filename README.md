@@ -16,7 +16,6 @@ pip install -r requirements
 ```
 Run migrations with 
 ```
-python manage.py makemigrations reminder
 python manage.py migrate reminder
 ```
 Create superuser for admin account
