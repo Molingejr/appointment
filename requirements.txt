@@ -9,10 +9,8 @@ django-apscheduler==0.2.13
 django-bootstrap4==0.0.7
 django-compat==1.0.15
 django-material==1.4.3
-django-phonenumber-field==2.2.0
 idna==2.8
 kombu==4.2.2.post1
-phonenumbers==8.10.4
 PyJWT==1.7.1
 PySocks==1.6.8
 pytz==2018.9

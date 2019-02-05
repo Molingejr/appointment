@@ -1,6 +1,5 @@
 from django.db import models
 from .jobs import scheduler
-from phonenumber_field.modelfields import PhoneNumberField
 
 
 class Appointment(models.Model):
@@ -8,7 +7,7 @@ class Appointment(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField(default="")
     date = models.DateTimeField()
-    tel = PhoneNumberField(blank=True)
+    tel = models.CharField(max_length=20)
 
     def __str__(self):
         return "{} {}".format(self.content, self.date)

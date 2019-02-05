@@ -1,6 +1,5 @@
 from django import forms
 from django.forms import ModelForm
-from phonenumber_field import modelfields
 from .models import Appointment
 
 
