@@ -6,14 +6,17 @@
 
 {% block content %}
     <h2>List of Scheduled Appointments</h2>
+    <a href="{% url 'reminder:home' %}">
+        <button class="btn">Home</button>
+    </a>
     <ul>
         {% for appointment in object_list reversed %}
-            <li class="card">
-                <div class="card-title">{{appointment.title}}</div>
-                <div class="card-content card-panel">
-                    {{ appointment.content }} <br/>
-                    Reminder Tel: {{ appointment.tel }} <br/>
-                    Time: {{ appointment.date }} <br/>
+            <li class="card blue-grey darken-3">
+                <div class="card-content white-text">
+                    <span class="card-title">{{appointment.title}}</span>
+                    <p>{{ appointment.content }}</p>
+                    <p>Reminder Tel: {{ appointment.tel }} </p>
+                    <p>Time: {{ appointment.date }} </p>
                 </div>
             </li>
             {% empty %}

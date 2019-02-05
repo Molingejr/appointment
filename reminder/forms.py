@@ -1,5 +1,6 @@
 from django import forms
 from django.forms import ModelForm
+from phonenumber_field import modelfields
 from .models import Appointment
 
 
@@ -9,5 +10,5 @@ class AppointmentForm(ModelForm):
         model = Appointment
         fields = ['title', 'content', 'date', 'tel']
         widgets = {
-            'date': forms.DateTimeInput(attrs={'id': 'input'})
+            'date': forms.DateTimeInput(attrs={'id': 'input', 'style': "text-align: center"})
         }

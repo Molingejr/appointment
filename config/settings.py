@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'reminder',
     'material',
     'bootstrap4',
+    'phonenumber_field',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.forms',
     'django_apscheduler'
-
 ]
 
 MIDDLEWARE = [

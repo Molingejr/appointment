@@ -28,3 +28,11 @@ Run the Application
 ```
 python manage.py runserver
 ```
+
+### Twilio Credentials
+Go to **appointment/reminder/sms** and replace # Credentials for twilio account
+ACCOUNT_SID, AUTH_TOKEN, SENDER_TEL with your twilio credentials
+
+### Note
+The Tel field of the schedule appointment form will require that you put your country code to the tel.
+e.g. +14212215453
