@@ -1,9 +1,9 @@
 from twilio.rest import Client
 
 # Credentials for twilio account
-ACCOUNT_SID = "ACbb2e1d788c2f357359a6875f422e38fe"
-AUTH_TOKEN = "2061c3f5e1388f8cec7cd5e02d9fa0e9"
-SENDER_TEL = "+14242215553"
+ACCOUNT_SID = ""
+AUTH_TOKEN = ""
+SENDER_TEL = ""
 
 
 def send_sms(receiver, sender, message):
