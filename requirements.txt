@@ -2,7 +2,7 @@ amqp==2.4.1
 APScheduler==3.5.3
 Babel==2.6.0
 billiard==3.5.0.5
-certifi==2018.11.29
+certifi==2022.12.7
 chardet==3.0.4
 Django==2.1.5
 django-apscheduler==0.2.13
